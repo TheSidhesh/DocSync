@@ -1,7 +1,5 @@
 # DocSync: Agentic Documentation Maintenance via Critic-Guided Reflexion
 
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX) <!-- TODO: Replace with actual arXiv ID -->
-
 ## Overview
 
 DocSync is an agentic AI workflow designed to combat "documentation debt"—the pervasive issue where software documentation becomes inconsistent with the executable code as it evolves. [1] This drift creates technical debt, hinders maintainability, and can lead to critical API misuse.
@@ -83,14 +81,6 @@ After a successful run, the `/content/outputs` directory (or the `results_dir` y
 -   `*.json` files: Raw predictions, cleaned outputs, and judge scores for the baseline, DocSync, and Oracle models (`baseline_outputs.json`, `docsync_outputs.json`, `oracle_outputs.json`).
 -   `judge_cache.json` & `judge_debug.json`: Cached results and detailed logs from the LLM-as-a-Judge evaluation.
 -   `docsync_model/`: The saved LoRA adapter for the trained DocSync model.
-
-## Limitations
-
-This is an early-stage research prototype with several limitations:
--   **Proxy Task:** The evaluation uses an artificial task (repairing truncated docstrings) from the CodeXGLUE dataset, not real-world repository history.
--   **Limited Scope:** Training is performed for a single epoch on Python code only.
--   **Metric Normalization:** Scores are calculated on cleaned docstring content, not the raw, end-to-end model output, to isolate semantic quality from formatting artifacts.
--   **No Execution:** The workflow does not yet verify functional correctness by executing code snippets (doctests) from the generated documentation.
 
 ## Future Work
 
