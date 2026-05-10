@@ -90,24 +90,4 @@ Future research will focus on bridging the gap to a production-ready system:
 -   **Multi-Modal Documentation:** Extending the agent with Vision-Language Models (VLMs) to understand and update diagrams (e.g., UML, architecture flows).
 -   **Human-in-the-Loop (HITL):** Building a system to incorporate feedback from human maintainers to further align the agent's behavior.
 
-## Citation
 
-If you use this work in your research, please cite our paper:
-
-```bibtex
-@article{badrinarayan2024docsync,
-  title={DocSync: Agentic Documentation Maintenance via Critic-Guided Reflexion},
-  author={Badrinarayan, Sidhesh and Parthasarathy, Adithya},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2024}
-}
-```
-
-## Authors
-
--   **Sidhesh Badrinarayan** (California, USA)
--   **Adithya Parthasarathy** (California, USA)
-
-## License
-
-This project is not explicitly licensed. For open-source use, a permissive license like MIT or Apache 2.0 would be appropriate.
